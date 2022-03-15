@@ -1,3 +1,4 @@
+import fs from 'fs';
 class Usuario {
     constructor(usuario) {
         this.info = {};
@@ -12,18 +13,20 @@ class Usuario {
     }
 
     async registrar() {
-        const params = {
-            method: 'POST',
-            body: JSON.stringify(this.info),
-            mode: 'no-cors', // no-cors, *cors, same-origin
-        };
-        const response = await fetch('http://localhost:3000/api/v1/registrar', params);
+        const base = fs.readFileSync('./baseDeDatos.json', { encoding: 'utf8' });
 
-        if (response) {
-            location.href = "http://localhost:5500/login.html";
-        } else {
-            alert('error registrando usuario')
-        }
+        // const params = {
+        //     method: 'POST',
+        //     body: JSON.stringify(this.info),
+        //     mode: 'no-cors', // no-cors, *cors, same-origin
+        // };
+        // const response = await fetch('http://localhost:3000/api/v1/registrar', params);
+
+        // if (response) {
+        //     location.href = "http://localhost:5500/frontEnd/login.html";
+        // } else {
+        //     alert('error registrando usuario')
+        // }
     }
 
     autenticar(correo, pass) {
