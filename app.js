@@ -1,7 +1,6 @@
 import { createServer } from 'http';
 import fs from 'fs';
 
-
 const server = createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -28,13 +27,9 @@ const server = createServer((req, res) => {
             }
         });
     }
-})
-
+});
 server.listen(3000);
-
-console.log('escuchando puerto 3000')
-
-
+console.log('escuchando puerto 3000');
 const registrar = async(usuario) => {
     try {
         const data = fs.readFileSync('./baseDeDatos.json');
