@@ -12,6 +12,6 @@ app.get('/', (request, response) => {
     response.send('Inicio');
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Servidor arriba y escuchando puerto 3000');
 });
