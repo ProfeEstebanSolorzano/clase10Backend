@@ -1,22 +1,23 @@
 {
-  "name": "superserver",
-  "version": "1.0.0",
-  "description": "Este es un servidor todo chiva",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ProfeEstebanSolorzano/clase10Backend.git"
-  },
-  "author": "Esteban Solorzano",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ProfeEstebanSolorzano/clase10Backend/issues"
-  },
-  "homepage": "https://github.com/ProfeEstebanSolorzano/clase10Backend#readme",
-  "dependencies": {
-    "express": "^4.18.1"
-  }
+    "name": "superserver",
+    "version": "1.0.0",
+    "description": "Este es un servidor todo chiva",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ProfeEstebanSolorzano/clase10Backend.git"
+    },
+    "author": "Esteban Solorzano",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ProfeEstebanSolorzano/clase10Backend/issues"
+    },
+    "homepage": "https://github.com/ProfeEstebanSolorzano/clase10Backend#readme",
+    "dependencies": {
+        "express": "^4.18.1"
+    }
 }
