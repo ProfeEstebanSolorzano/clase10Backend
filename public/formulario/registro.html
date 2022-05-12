@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myscript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form onsubmit="return procesarFormulario()" novalidate>
+            <label for="fname">Username<span class="rojo">*</span></label>
+            <input type="text" name="username" placeholder="Your username.." required>
+
+            <label for="name">Password<span class="rojo">*</span></label>
+            <input type="password" name="password" placeholder="Your password.." required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>                
+                <option value="">Select</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Panama">Panama</option>
+            </select>
+
+            <p>Please select your favorite Web language:<span class="rojo">*</span></p>
+            <input type="radio" id="html" name="fav_language" value="HTML" required>
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+
+            <p>Please select your age:<span class="rojo">*</span></p>
+            <input type="radio" id="age1" name="age" value="menor de 30" required>
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="entre 31 y 60">
+            <label for="age2">31 - 60</label><br>
+            <input type="radio" id="age3" name="age" value="mayor de 61">
+            <label for="age3">61 - 100</label><br><br>
+
+            <p>Please select all that apply:</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+
+            <input type="submit" value="Submit" id="botonFormulario">
+        </form>
+        <input type="button" value="click me" id="boton1">
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form onsubmit="return login()" novalidate>
+            <label for="fname">Username<span class="rojo">*</span></label>
+            <input type="text" name="username" placeholder="Your username.." required>
+
+            <label for="name">Password<span class="rojo">*</span></label>
+            <input type="password" name="password" placeholder="Your password.." required>
+
+            <input type="submit" value="Login" id="botonFormulario">
+        </form>
+        <input type="button" value="click me" id="boton1">
+    </div>
+
+
+</body>
+
+</html>
