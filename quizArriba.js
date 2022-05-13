@@ -10,7 +10,7 @@ const options = {
     index: false,
     redirect: false
 }
-app.use(express.static('public', options))
+app.use(express.static('public/formulario', options))
 
 app.get('/hola', (request, response) => {
     console.log(request);
@@ -22,7 +22,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/quiz', (request, response) => {
-    response.sendFile(`${__dirname}/public/index.html`);
+    response.sendFile(`${__dirname}/public/formulario/registro.html`);
 })
 
 app.listen(process.env.PORT || 3000, () => {

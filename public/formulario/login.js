@@ -1,4 +1,4 @@
-const procesarFormulario = () => {
+const login = () => {
     const persona = {};
     persona.username = document.querySelector('input[name="username"]').value;
 
@@ -16,12 +16,12 @@ const procesarFormulario = () => {
         fetch('http://localhost:3000/login', opciones)
             .then(response => response.json())
             .then(data => {
-                if (data) {
+                if (data.response === true) {
                     window.location.replace('inicio.html');
                 } else {
-                    if (data === 'usuario') {
+                    if (data.response === 'usuario') {
                         alert('El username no existe!');
-                    } else if (data === 'password') {
+                    } else if (data.response === 'password') {
                         alert('Password incorrecto');
                     } else {
                         alert('Error al loguear');
